@@ -44,10 +44,7 @@ const options = {
     const instauto = await Instauto(instautoDb, browser, options);
 
     // List of usernames that we should follow the followers of, can be celebrities etc.
-    const usersToFollowFollowersOf = [
-      "rickandmorty",
-      "rickandmortyrickstaverse",
-    ];
+    const usersToFollowFollowersOf = ["spiritualword"];
 
     // Now go through each of these and follow a certain amount of their followers
     await instauto.followUsersFollowers({
