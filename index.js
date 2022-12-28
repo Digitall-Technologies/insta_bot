@@ -25,7 +25,7 @@ const options = {
   dryRun: false,
 };
 
-(async () => {
+const runFollowBot = async () => {
   let browser;
 
   try {
@@ -78,4 +78,6 @@ const options = {
     console.log("Closing browser");
     if (browser) await browser.close();
   }
-})();
+};
+
+module.exports = { runFollowBot };
