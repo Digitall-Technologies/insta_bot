@@ -1,7 +1,7 @@
 const express = require("express");
 const cron = require("node-cron");
 const app = express();
-const port = 3001;
+const port = process.env.PORT || 3001;
 const { runFollowBot } = require("./index.js");
 
 cron.schedule("0 0 * * *", function () {
